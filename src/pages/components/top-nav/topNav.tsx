@@ -13,48 +13,48 @@ if (typeof window !== "undefined") {
  * identifies the screen size.
  */
 const useWindowSize = () => {
-    const [windowSize, setWindowSize] = useState({
-        width: 0,
-        height: 0,
-    });
+  const [windowSize, setWindowSize] = useState({
+    width: 0,
+    height: 0,
+  });
 
-    useEffect(() => {
-        // only execute all the code below in client side
-        if (typeof window !== "undefined") {
-            // Handler to call on window resize
-            const handleResize = () => {
-                // Set window width/height to state
-                setWindowSize({
-                    width: window.innerWidth,
-                    height: window.innerHeight,
-                });
-            };
+  useEffect(() => {
+    // only execute all the code below in client side
+    if (typeof window !== "undefined") {
+      // Handler to call on window resize
+      const handleResize = () => {
+        // Set window width/height to state
+        setWindowSize({
+          width: window.innerWidth,
+          height: window.innerHeight,
+        });
+      };
 
-            // Add event listener
-            window.addEventListener("resize", handleResize);
+      // Add event listener
+      window.addEventListener("resize", handleResize);
 
-            // Call handler right away so state gets updated with initial window size
-            handleResize();
+      // Call handler right away so state gets updated with initial window size
+      handleResize();
 
-            // Remove event listener on cleanup
-            return () => window.removeEventListener("resize", handleResize);
-        }
-    }, []);
-    return windowSize;
+      // Remove event listener on cleanup
+      return () => window.removeEventListener("resize", handleResize);
+    }
+  }, []);
+  return windowSize;
 };
 
 const Topnav: NextPage = () => {
-    const size = useWindowSize();
+  const size = useWindowSize();
 
-    const SmScreen = () => {
-        return <SmallScreen />;
-    };
+  const SmScreen = () => {
+    return <SmallScreen />;
+  };
 
-    const LgScreen = () => {
-        return <LargeScreen />;
-    };
+  const LgScreen = () => {
+    return <LargeScreen />;
+  };
 
-    return <>{size.width <= 990 ? <SmScreen /> : <LgScreen />}</>;
+  return <>{size.width <= 990 ? <SmScreen /> : <LgScreen />}</>;
 };
 
 export default Topnav;
