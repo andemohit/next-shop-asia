@@ -1,13 +1,16 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import { Col, Container, Row } from "react-bootstrap";
 import styles from "../assets/styles/Home.module.scss";
+import CategoryCarousel from "./components/category-carousel/categoryCarousel";
 import Topnav from "./components/top-nav/topNav";
 
 const Home: NextPage = () => {
     return (
         <>
             <Head>
+                <html lang="en" />
                 <title>Create Next App</title>
                 <meta
                     name="description"
@@ -19,8 +22,15 @@ const Home: NextPage = () => {
 
             <Topnav />
 
-            <main className={styles.main}>
-                
+            <main className="py-4">
+                <Container>
+                    <Row>
+                        <Col>
+                            <CategoryCarousel />
+                        </Col>
+                    </Row>
+                </Container>
+                {/* Categories list */}
             </main>
 
             <footer className={styles.footer}>
