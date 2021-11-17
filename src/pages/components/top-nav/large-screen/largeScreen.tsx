@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import Icofont from "react-icofont";
-
+import Link from "next/link";
 const LargeScreen: NextPage = () => {
   return (
     <div className="bg-white shadow-sm shopasia-main-nav">
@@ -304,9 +304,11 @@ const LargeScreen: NextPage = () => {
                 Products
               </a>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a className="dropdown-item" href="listing.html">
-                  Listing
-                </a>
+                <Link href="/products">
+                  <a className="dropdown-item" href="listing.html">
+                    Listing
+                  </a>
+                </Link>
                 <a className="dropdown-item" href="product_details.html">
                   Detail
                 </a>

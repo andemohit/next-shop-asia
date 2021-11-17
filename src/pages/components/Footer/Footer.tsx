@@ -1,38 +1,60 @@
-import React from "react";
-import image from "next/image";
+import type { NextPage } from "next";
+import Image from "next/image";
+import { useEffect, useState } from "react";
+import LargeScreen from "./large-screen/largeScreen";
+import SmallScreen from "./small-screen/smallScreen";
 
-function Footer() {
-  return (
-    <div>
-      <section className="footer-bottom border-top py-4">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-6">
-              <span className="pr-2">© 2020 ShopAsia</span>
-              <span className="pr-2">
-                <a href="#" className="text-dark">
-                  Privacy
-                </a>
-              </span>
-              <span className="pr-2">
-                <a href="#" className="text-dark">
-                  Terms &amp; Conditions
-                </a>
-              </span>
-            </div>
-            <div className="col-md-6 text-md-right">
-              <a href="#">
-                {/* <image src="img/appstore.png" height="30" /> */}
-              </a>
-              <a href="#">
-                {/* <image src="img/playmarket.png" height="30" /> */}
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-  );
+if (typeof window !== "undefined") {
 }
+
+/**
+ * @Hook
+ *
+ * identifies the screen size.
+ */
+const useWindowSize = () => {
+  const [windowSize, setWindowSize] = useState({
+    width: 0,
+    height: 0,
+  });
+
+  useEffect(() => {
+    // only execute all the code below in client side
+    if (typeof window !== "undefined") {
+      // Handler to call on window resize
+      const handleResize = () => {
+        // Set window width/height to state
+        setWindowSize({
+          width: window.innerWidth,
+          height: window.innerHeight,
+        });
+      };
+
+      // Add event listener
+      window.addEventListener("resize", handleResize);
+
+      // Call handler right away so state gets updated with initial window size
+      handleResize();
+
+      // Remove event listener on cleanup
+      return () => window.removeEventListener("resize", handleResize);
+    }
+  }, []);
+  return windowSize;
+};
+
+const Footer: NextPage = () => {
+  const size = useWindowSize();
+
+  const SmScreen = () => {
+    return <SmallScreen />;
+  };
+
+  const LgScreen = () => {
+    return <LargeScreen />;
+  };
+
+  return <>{size.width <= 990 ? <SmScreen /> : <LgScreen />}</>;
+};
 
 export default Footer;
