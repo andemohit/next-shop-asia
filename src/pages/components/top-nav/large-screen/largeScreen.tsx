@@ -49,18 +49,34 @@ const LargeScreen: NextPage = () => {
             >
               <div>
                 {/* <Icofont
-                                    className="d-flex
-                                    align-items-center
-                                    bg-light
-                                    rounded-pill
-                                    p-2
-                                    icofont-size
-                                    border
-                                    shadow-sm
-                                    mr-2"
-                                    icon="icofont-location-pin"
-                                    size="1"
-                                /> */}
+                    className="d-flex
+                    align-items-center
+                    bg-light
+                    rounded-pill
+                    p-2
+                    icofont-size
+                    border
+                    shadow-sm
+                    mr-2"
+                    icon="icofont-location-pin"
+                    size="1"
+                /> */}
+
+                <Link href="cart.html">
+                    <a
+                        className="d-flex
+                        align-items-center
+                        bg-light
+                        rounded-pill
+                        p-2
+                        icofont-size
+                        border
+                        shadow-sm
+                        mr-2"
+                    >
+                        <i className="icofont-location-pin"></i>
+                    </a>
+                </Link>
                 {/* <i className="text-dark icofont-location-pin"></i> */}
               </div>
               <div>
