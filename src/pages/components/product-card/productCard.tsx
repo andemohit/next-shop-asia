@@ -22,16 +22,17 @@ const productCard = ({ item }: productDetailsProps) => {
               <Image
                 src="/../../../assets/img/listing/v1.jpg"
                 className="img-fluid item-img w-100 mb-3"
-                alt="Picture of the author"
-         
-                width={100}
+                alt=""
+                width={90}
                 height={130}
               />
               <h6>{item.name}</h6>
             </a>
             <div className="d-flex align-items-center justify-content-between">
               <a href="product_details.html" className="text-dark">
-                <h6 className="price m-0 text-success">₹{item.price}/{item.units}</h6>
+                <h6 className="price m-0 text-success">
+                  ₹{item.price}/{item.units}
+                </h6>
               </a>
               <a
                 data-toggle="collapse"

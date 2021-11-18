@@ -4,6 +4,8 @@ import Icofont from "react-icofont";
 import { NextPage } from "next";
 
 const LargeScreen: NextPage = () => {
+
+
   return (
     <footer className="section-footer border-top bg-white">
       <section className="footer-top py-4">

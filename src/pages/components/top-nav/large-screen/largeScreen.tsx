@@ -13,10 +13,12 @@ const LargeScreen: NextPage = () => {
                 container
             "
       >
-        <a className="navbar-brand mr-0" href="home.html">
-          <h2>Logo</h2>
-          {/* <Image className="img-fluid logo-img" src="img/logo.png" alt="" /> */}
-        </a>
+        <Link href="/">
+          <a className="navbar-brand mr-0">
+            <h2>Logo</h2>
+            {/* <Image className="img-fluid logo-img" src="img/logo.png" alt="" /> */}
+          </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -287,9 +289,12 @@ const LargeScreen: NextPage = () => {
         <div className="container menu-bar d-flex align-items-center">
           <ul className="list-unstyled d-flex mb-0">
             <li className="nav-item active">
-              <a className="nav-link text-white pl-0" href="home.html">
-                Home <span className="sr-only">(current)</span>
-              </a>
+              <Link href="/">
+                <a className="nav-link text-white pl-0">
+                  Home
+                  {/* <span className="sr-only"></span> */}
+                </a>
+              </Link>
             </li>
             <li className="nav-item dropdown">
               <a
@@ -337,12 +342,14 @@ const LargeScreen: NextPage = () => {
                 Checkout Process
               </a>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a className="dropdown-item" href="cart.html">
-                  Cart
-                </a>
+                <Link href="/cart">
+                  <a className="dropdown-item">Cart</a>
+                </Link>
+                <Link href="/checkout">
                 <a className="dropdown-item" href="checkout.html">
                   Checkout
                 </a>
+                </Link>
                 <a className="dropdown-item" href="successful.html">
                   Successful
                 </a>
@@ -361,9 +368,9 @@ const LargeScreen: NextPage = () => {
                 My Order
               </a>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a className="dropdown-item" href="my_order.html">
-                  My order
-                </a>
+                <Link href="/myorders">
+                  <a className="dropdown-item">My order</a>
+                </Link>
                 <a className="dropdown-item" href="status_complete.html">
                   Status Complete
                 </a>
