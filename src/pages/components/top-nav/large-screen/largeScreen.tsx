@@ -63,8 +63,8 @@ const LargeScreen: NextPage = () => {
                 /> */}
 
                 <Link href="cart.html">
-                    <a
-                        className="d-flex
+                  <a
+                    className="d-flex
                         align-items-center
                         bg-light
                         rounded-pill
@@ -73,9 +73,9 @@ const LargeScreen: NextPage = () => {
                         border
                         shadow-sm
                         mr-2"
-                    >
-                        <i className="icofont-location-pin"></i>
-                    </a>
+                  >
+                    <i className="icofont-location-pin"></i>
+                  </a>
                 </Link>
                 {/* <i className="text-dark icofont-location-pin"></i> */}
               </div>
@@ -330,9 +330,9 @@ const LargeScreen: NextPage = () => {
                     Listing
                   </a>
                 </Link>
-                <a className="dropdown-item" href="product_details.html">
-                  Detail
-                </a>
+                <Link href='product-details'>
+                  <a className="dropdown-item">Detail</a>
+                </Link>
                 <div className="dropdown-divider"></div>
                 <a className="dropdown-item" href="picks_today.html">
                   Trending
@@ -362,9 +362,9 @@ const LargeScreen: NextPage = () => {
                   <a className="dropdown-item">Cart</a>
                 </Link>
                 <Link href="/checkout">
-                <a className="dropdown-item" href="checkout.html">
-                  Checkout
-                </a>
+                  <a className="dropdown-item" href="checkout.html">
+                    Checkout
+                  </a>
                 </Link>
                 <a className="dropdown-item" href="successful.html">
                   Successful

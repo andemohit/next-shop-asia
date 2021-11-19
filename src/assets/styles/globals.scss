@@ -1300,3 +1300,16 @@ label {
 .footer-top .row {
   justify-content: space-around;
 }
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.75rem 1rem !important;
+  list-style: none;
+  border-radius: 0.25rem;
+  background-color: #e9ecef;
+}
+
+.rounded {
+  border-radius: 1 rem !important;
+}

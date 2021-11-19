@@ -33,7 +33,7 @@ const Checkout: NextPage = () => {
                   <p className="small text-muted m-0">1001 Veterans Blvd</p>
                   <p className="small text-muted m-0">Redwood City, CA 94063</p>
                 </div>
-                <div className="address p-3 bg-light">
+                {/* <div className="address p-3 bg-light">
                   <h6 className="m-0 text-dark">Payment Method</h6>
                 </div>
                 <div className="p-3">
@@ -49,8 +49,8 @@ const Checkout: NextPage = () => {
                       <i className="icofont-rounded-right ml-auto"></i>
                     </div>
                   </a>
-                </div>
-                <div className="address p-3 bg-light">
+                </div> */}
+                {/* <div className="address p-3 bg-light">
                   <h6 className="text-dark m-0">Promo Code</h6>
                 </div>
                 <div>
@@ -109,7 +109,7 @@ const Checkout: NextPage = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="col-lg-4">

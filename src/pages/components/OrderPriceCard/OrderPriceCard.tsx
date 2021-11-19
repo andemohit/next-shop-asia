@@ -53,9 +53,9 @@ const OrderPriceCard = () => {
               </h6>
             </div>
             <div className="p-3 border-top">
-              <h5 className="mb-0">
+              <h5 className="mb-0 ">
                 TO PAY
-                <span className="float-right text-danger">₹1329</span>
+                <span className="float-right text-danger float-end">₹1329</span>
               </h5>
             </div>
           </div>

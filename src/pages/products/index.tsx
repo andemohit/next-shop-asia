@@ -1,7 +1,6 @@
-import TopNav from "../components/top-nav/topNav";
+
 import type { NextPage } from "next";
 import ProductCard from "../components/product-card/productCard";
-
 import Layout from "../components/Layout/Layout";
 
 const ProductList: NextPage = () => {
