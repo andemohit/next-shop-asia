@@ -7,7 +7,7 @@ import Slider, { Settings } from "react-slick";
 
 const CategoryCarousel: NextPage = () => {
     const settings: Settings = {
-        dots: true,
+        dots: false,
         slidesPerRow: 8,
         draggable: true,
         infinite: true,
@@ -71,7 +71,7 @@ const CategoryCarousel: NextPage = () => {
                             categories.map((item: any, _key: any) => {
                                 return (
                                     <div className="" key={item.id}>
-                                        <div className="my-2 px-2 py-3 c-it bg-white shadow-sm rounded text-center">
+                                        <div className="my-2 px-2 py-3 c-it bg-white shadow-sm rounded-3 text-center">
                                             <Link href="/">
                                                 <a>
                                                     <Image className="img-fluid px-2 mx-auto" src={item.imgURL} alt="001" width="80" height="80"/>

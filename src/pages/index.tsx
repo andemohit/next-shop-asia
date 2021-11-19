@@ -5,6 +5,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import CategoryCarousel from "./components/category-carousel/categoryCarousel";
 import Footer from "./components/Footer/Footer";
 import Layout from './components/Layout/Layout';
+import PopularCategories from "./components/Popular-categories/PopularCategories";
 
 const Home: NextPage = () => {
     return (
@@ -29,6 +30,7 @@ const Home: NextPage = () => {
                     <Row>
                         <Col>
                             <CategoryCarousel />
+                            <PopularCategories />
                         </Col>
                     </Row>
                 </Container>
