@@ -46,7 +46,7 @@ const LargeScreen: NextPage = () => {
               aria-expanded="false"
             >
               <div>
-                <Icofont
+                {/* <Icofont
                     className="d-flex
                     align-items-center
                     bg-light
@@ -58,7 +58,7 @@ const LargeScreen: NextPage = () => {
                     mr-2"
                     icon="icofont-location-pin"
                     size="1"
-                />
+                /> */}
 
                 {/* <Link href="cart.html">
                     <a

@@ -1,0 +1,82 @@
+[
+    {
+        "id": "001",
+        "title": "Vegitables",
+        "imgURL": "/assets/img/categorie/1.svg"
+    },
+    {
+        "id": "002",
+        "title": "Fruits",
+        "imgURL": "/assets/img/categorie/2.svg"
+    },
+    {
+        "id": "003",
+        "title": "Meet",
+        "imgURL": "/assets/img/categorie/3.svg"
+    },
+    {
+        "id": "004",
+        "title": "Seafood",
+        "imgURL": "/assets/img/categorie/4.svg"
+    },
+    {
+        "id": "005",
+        "title": "Milk & Egg",
+        "imgURL": "/assets/img/categorie/5.svg"
+    },
+    {
+        "id": "006",
+        "title": "Bread",
+        "imgURL": "/assets/img/categorie/6.svg"
+    },
+    {
+        "id": "007",
+        "title": "Frozen",
+        "imgURL": "/assets/img/categorie/7.svg"
+    },
+    {
+        "id": "008",
+        "title": "Organic",
+        "imgURL": "/assets/img/categorie/8.svg"
+    },
+    {
+        "id": "009",
+        "title": "Vegitables",
+        "imgURL": "/assets/img/categorie/1.svg"
+    },
+    {
+        "id": "010",
+        "title": "Fruits",
+        "imgURL": "/assets/img/categorie/2.svg"
+    },
+    {
+        "id": "011",
+        "title": "Meet",
+        "imgURL": "/assets/img/categorie/3.svg"
+    },
+    {
+        "id": "012",
+        "title": "Seafood",
+        "imgURL": "/assets/img/categorie/4.svg"
+    },
+    {
+        "id": "013",
+        "title": "Milk & Egg",
+        "imgURL": "/assets/img/categorie/5.svg"
+    },
+    {
+        "id": "014",
+        "title": "Bread",
+        "imgURL": "/assets/img/categorie/6.svg"
+    },
+    {
+        "id": "015",
+        "title": "Frozen",
+        "imgURL": "/assets/img/categorie/7.svg"
+    },
+    {
+        "id": "016",
+        "title": "Organic",
+        "imgURL": "/assets/img/categorie/8.svg"
+    }
+]

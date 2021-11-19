@@ -2,10 +2,9 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import { Col, Container, Row } from "react-bootstrap";
-import styles from "../assets/styles/Home.module.scss";
 import CategoryCarousel from "./components/category-carousel/categoryCarousel";
 import Footer from "./components/Footer/Footer";
-import Topnav from "./components/top-nav/topNav";
+import Layout from './components/Layout/Layout';
 
 const Home: NextPage = () => {
     return (
@@ -21,7 +20,9 @@ const Home: NextPage = () => {
                 <body className="fixed-bottom-padding" />
             </Head>
 
-            <Topnav />
+            <Layout>
+                
+            </Layout>
 
             <main className="py-4">
                 <Container>

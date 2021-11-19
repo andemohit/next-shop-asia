@@ -1,4 +1,4 @@
-import '../assets/styles/globals.scss'
+import '../../public/assets/styles/globals.scss'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import type { AppProps } from 'next/app'
 import ProductList from './components/product-list'

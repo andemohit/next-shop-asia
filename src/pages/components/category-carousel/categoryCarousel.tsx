@@ -1,6 +1,8 @@
+import axios from "axios";
 import { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import Slider, { Settings } from "react-slick";
 
 const CategoryCarousel: NextPage = () => {
@@ -10,60 +12,83 @@ const CategoryCarousel: NextPage = () => {
         draggable: true,
         infinite: true,
         swipe: true,
+        responsive: [
+            {
+                breakpoint: 990,
+                settings: {
+                    slidesPerRow: 4,
+                },
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesPerRow: 2
+                }
+            }
+        ],
     };
-    
-    const imgURL: string = `${process.env.placeholder}25/`;
 
-    return (
-        <>
-            <div className="pt-3 pb-2 categories-slider">
-                <div className="d-flex align-items-center mb-2">
-                    <h5 className="m-0">What do you looking for?</h5>
-                    <a
-                        href="#"
-                        className="ms-auto btn btn-outline-success btn-sm"
-                    >
-                        See more
-                    </a>
+    const [error, setError] = useState(null);
+    const [isLoaded, setIsLoaded] = useState(false);
+    const [categories, setCategories] = useState([{}]);
+
+    useEffect(() => {
+        fetchCategories();
+    }, []);
+
+    const fetchCategories = async () => {
+        try {
+            const response = await axios
+                .get("assets/json/categoryList.json");
+            setCategories(response.data);
+            setIsLoaded(true);
+        } catch (error: any) {
+            console.log(error);
+            setIsLoaded(true);
+            setError(error);
+        }
+    }
+
+    if (error) {
+        return <div>Error: {error}</div>
+    } else if (!isLoaded) {
+        return <div>Loading...</div>
+    } else {
+        return (
+            <>
+                <div className="pt-3 pb-2 categories-slider">
+                    <div className="d-flex align-items-center mb-2">
+                        <h5 className="m-0">What do you looking for?</h5>
+                        <a
+                            href="#"
+                            className="ms-auto btn btn-outline-success btn-sm"
+                        >
+                            See more
+                        </a>
+                    </div>
+                    <Slider {...settings}>
+                        {
+                            categories.map((item: any, _key: any) => {
+                                return (
+                                    <div className="" key={item.id}>
+                                        <div className="my-2 px-2 py-3 c-it bg-white shadow-sm rounded text-center">
+                                            <Link href="/">
+                                                <a>
+                                                    <Image className="img-fluid px-2 mx-auto" src={item.imgURL} alt="001" width="80" height="80"/>
+                                                    <div>{item.title}</div>
+                                                </a>
+                                            </Link>
+                                        </div>
+                                    </div>
+                                )
+                            })
+                        }
+                    </Slider>
                 </div>
-                <Slider {...settings}>
-                    <div className="">
-                        <div className="my-2 px-2 py-3 c-it bg-white shadow-sm rounded text-center">
-                            <Link href="/">
-                                <a>
-                                    <Image className="img-fluid px-2 mx-auto" src={"https://via.placeholder.com/50"} alt="001" width="100" height="100"/>
-                                </a>
-                            </Link>
-                        </div>
-                    </div>
-                    <div>
-                        <h3>2</h3>
-                    </div>
-                    <div>
-                        <h3>3</h3>
-                    </div>
-                    <div>
-                        <h3>4</h3>
-                    </div>
-                    <div>
-                        <h3>5</h3>
-                    </div>
-                    <div>
-                        <h3>6</h3>
-                    </div>
-                    <div>
-                        <h3>7</h3>
-                    </div>
-                    <div>
-                        <h3>8</h3>
-                    </div>
-                    <div>
-                        <h3>9</h3>
-                    </div>
-                </Slider>
-            </div>
-        </>
-    );
+            </>
+        );
+    }
+
 };
 
 export default CategoryCarousel;
