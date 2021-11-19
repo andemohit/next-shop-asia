@@ -6,7 +6,7 @@ interface productDetailsProps {
   item: any;
 }
 
-const productCard = ({ item }: productDetailsProps) => {
+const ProductCard = ({ item }: productDetailsProps) => {
   return (
     <div className="col-6 col-md-3 mb-3">
       <div className="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm">
@@ -81,4 +81,4 @@ const productCard = ({ item }: productDetailsProps) => {
   );
 };
 
-export default productCard;
+export default ProductCard;

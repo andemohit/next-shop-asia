@@ -1,11 +1,63 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
-import styles from "../assets/styles/Home.module.scss";
+import CarouselComp from "./components/carousel/CarouselComp";
+
 import Footer from "./components/Footer/Footer";
+import ProductCard from "./components/product-card/productCard";
 import Topnav from "./components/top-nav/topNav";
 
 const Home: NextPage = () => {
+  const dummyData: any = [
+    {
+      id: 1,
+      name: "chills",
+      image: "/../../assets/img/listing/v1.jpg",
+      units: "1kg",
+      price: "100",
+    },
+    {
+      id: 2,
+      name: "Onions",
+      image: "/../../assets/img/listing/v1.jpg",
+      units: "1kg",
+      price: "100",
+    },
+    {
+      id: 3,
+      name: "tomato",
+      image: "/../../assets/img/listing/v1.jpg",
+      units: "1kg",
+      price: "100",
+    },
+    {
+      id: 5,
+      name: "Seeds",
+      image: "/../../assets/img/listing/v1.jpg",
+      units: "1kg",
+      price: "100",
+    },
+    {
+      id: 6,
+      name: "Seeds",
+      image: "/../../assets/img/listing/v1.jpg",
+      units: "1kg",
+      price: "100",
+    },
+    {
+      id: 7,
+      name: "Seeds",
+      image: "/../../assets/img/listing/v1.jpg",
+      units: "1kg",
+      price: "100",
+    },
+    {
+      id: 8,
+      name: "Seeds",
+      image: "/../../assets/img/listing/v1.jpg",
+      units: "1kg",
+      price: "100",
+    },
+  ];
   return (
     <>
       <Head>
@@ -16,21 +68,42 @@ const Home: NextPage = () => {
       </Head>
 
       <Topnav />
-      <main className={styles.main}></main>
+      <section className="py-4 shopasia-main-body">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="shopasia-home-page">
+                <div className="shopasia-body">
+                  <div className="py-3 shopasia-promos">
+                    <div className="d-flex align-items-center mb-3">
+                      <h5 className="m-0">Popular Categories</h5>
+                    </div>
+                    <CarouselComp />
+                  </div>
+                  <div className="title d-flex align-items-center py-3 justify-content-between ">
+                    <h5 className="m-0">Pick's Today</h5>
+                    <a
+                      className="ml-auto btn btn-outline-success btn-sm"
+                      href="picks_today.html"
+                    >
+                      See more
+                    </a>
+                  </div>
+                  <div className="pick_today">
+                    <div className="row">
+                      {dummyData?.map((item: any, index: any) => (
+                        <ProductCard item={item} />
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <Footer />
-      {/* <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer> */}
     </>
   );
 };

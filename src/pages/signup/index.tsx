@@ -35,7 +35,7 @@ const SignUp: NextPage = () => {
               <div className="p-3">
                 <h2 className="my-0">Let's get started</h2>
                 <p className="small mb-4">
-                  Create account to see our top picks htmlFor you!
+                  Create account to see our top picks for you!
                 </p>
                 <form action="">
                   <div className="form-group">

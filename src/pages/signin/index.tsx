@@ -76,10 +76,10 @@ const SignIn: NextPage = () => {
                     Sign up with Google
                   </a>
                   <p className="text-center mt-3 mb-0">
-                      <Link href='signup'>
-                    <a className="text-dark">
-                      Don't have an account? Sign up
-                    </a>
+                    <Link href="signup">
+                      <a className="text-dark">
+                        Don't have an account? Sign up
+                      </a>
                     </Link>
                   </p>
                 </div>
