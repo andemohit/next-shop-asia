@@ -1,0 +1,32 @@
+[
+    {
+        "id": "001",
+        "title": "Asian",
+        "imgURL": "/assets/img/asian-cuisine.jpg"
+    },
+    {
+        "id": "002",
+        "title": "Brazil",
+        "imgURL": "/assets/img/brazil-cuisine.jpg"
+    },
+    {
+        "id": "003",
+        "title": "Continental",
+        "imgURL": "/assets/img/continental-cuisine.jpg"
+    },
+    {
+        "id": "001",
+        "title": "Asian",
+        "imgURL": "/assets/img/asian-cuisine.jpg"
+    },
+    {
+        "id": "002",
+        "title": "Brazil",
+        "imgURL": "/assets/img/brazil-cuisine.jpg"
+    },
+    {
+        "id": "003",
+        "title": "Continental",
+        "imgURL": "/assets/img/continental-cuisine.jpg"
+    }
+]

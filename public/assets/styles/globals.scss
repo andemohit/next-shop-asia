@@ -3,6 +3,10 @@
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
 
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/utilities";
+
 :root {
 	--bs-body-font-size: 0.80rem !important;
 	--bs-body-font-family: 'Ubuntu', sans-serif !important;
@@ -781,6 +785,15 @@ label {
   border-radius: 1rem !important;
 }
 
+$utilities: map-merge(
+  $utilities,
+  (
+    "rounded-3": (
+      border-radius: '1rem'
+    )
+  )
+);
+
 /* Filter */
 .filter .custom-control-label::before {
   right: 1rem;
@@ -1264,12 +1277,12 @@ label {
   font-size: 17px;
   color: #ff1b1b;
 }
-.promo-slider .slick-slide img {
+.promo-slider img {
   object-fit: cover;
   height: 180px;
   width: 100%;
 }
-.promo-slider .slick-slide .cate_title {
+.promo-slider .cate_title {
   position: absolute;
   top: 50%;
   left: 50%;
