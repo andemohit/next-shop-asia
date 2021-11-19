@@ -778,7 +778,7 @@ label {
   overflow: auto;
 }
 
-.rounded {
+.round {
   border-radius: 1rem !important;
 }
 
@@ -1313,3 +1313,32 @@ label {
 .rounded {
   border-radius: 1 rem !important;
 }
+
+.btn-success:hover {
+  color: #fff;
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+.form-control:focus {
+  border-color: #28a744 !important;
+}
+
+.btn-light:hover {
+  background-color: #e2e6ea !important;
+}
+.btn-lg {
+  font-size: 14px !important;
+  padding: 12px 14px !important;
+  font-weight: 500;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 1rem !important;
+}
+
+

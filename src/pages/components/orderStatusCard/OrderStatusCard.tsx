@@ -5,7 +5,7 @@ const OrderStatusCard = () => {
         <a className="text-decoration-none text-dark">
           <div className="p-3 rounded shadow-sm bg-white">
             <div className="d-flex align-items-center mb-3 justify-content-lg-between">
-              <p className="bg-success text-white py-1 px-2 rounded small mb-0">
+              <p className="bg-success text-white py-1 px-2 round small mb-0">
                 Delivered
               </p>
               <p className="text-muted ml-auto small m-0 ">

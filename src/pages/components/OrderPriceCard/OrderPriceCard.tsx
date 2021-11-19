@@ -3,7 +3,7 @@ const OrderPriceCard = () => {
   return (
     <div>
       <div className="sticky_sidebar">
-        <div className="bg-white rounded overflow-hidden shadow-sm mb-3 checkout-sidebar">
+        <div className="bg-white round overflow-hidden shadow-sm mb-3 checkout-sidebar">
           <div className="d-flex align-items-center shopasia-cart-item-profile border-bottom bg-white p-3">
             <Image
               alt="shopasia"

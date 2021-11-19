@@ -24,7 +24,7 @@ const ProductDetails: NextPage = () => {
                         >
                           <Image
                             src={require("../../assets/img/recommend/r3.jpg")}
-                            className="img-fluid mx-auto shadow-sm rounded"
+                            className="img-fluid mx-auto shadow-sm round"
                             alt="Responsive image"
                             layout="responsive"
                           />
@@ -81,7 +81,7 @@ const ProductDetails: NextPage = () => {
                   </div>
                 </div>
                 <div className="col-lg-6">
-                  <div className="p-4 bg-white rounded shadow-sm">
+                  <div className="p-4 bg-white round shadow-sm">
                     <div className="pt-0">
                       <h2 className="font-weight-bold">
                         Valencia Orange - Imported

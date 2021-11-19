@@ -22,7 +22,7 @@ const SmallScreen: NextPage = () => {
                         text-decoration-none
                         bg-white
                         p-1
-                        rounded
+                        round
                         shadow-sm
                         d-flex
                         align-items-center
@@ -43,7 +43,7 @@ const SmallScreen: NextPage = () => {
                     className="
                     input-group
                     mt-3
-                    rounded
+                    round
                     shadow-sm
                     overflow-hidden
                     bg-white

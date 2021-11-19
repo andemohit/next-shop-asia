@@ -54,7 +54,7 @@ const Cart: NextPage = () => {
                               aria-expanded="true"
                               aria-controls="collapsetwo"
                             >
-                              <div className="rounded shadow bg-success d-flex align-items-center p-3 text-white">
+                              <div className="round shadow bg-success d-flex align-items-center p-3 text-white">
                                 <div className="more">
                                   <h6 className="m-0">Subtotal ₹8.52</h6>
                                   <p className="small m-0">
