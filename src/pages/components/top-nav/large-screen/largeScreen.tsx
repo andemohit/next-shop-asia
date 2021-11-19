@@ -60,7 +60,7 @@ const LargeScreen: NextPage = () => {
                     size="1"
                 /> */}
 
-                <Link href="cart.html">
+                {/* <Link href="cart.html">
                     <a
                         className="d-flex
                         align-items-center
@@ -74,7 +74,7 @@ const LargeScreen: NextPage = () => {
                     >
                         <i className="icofont-location-pin"></i>
                     </a>
-                </Link>
+                </Link> */}
                 {/* <i className="text-dark icofont-location-pin"></i> */}
               </div>
               <div>
