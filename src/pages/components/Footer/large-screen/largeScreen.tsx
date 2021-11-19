@@ -220,7 +220,7 @@ const LargeScreen: NextPage = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-6">
-              <span className="pr-2">© 2020 ShopAsia</span>
+              <span className="pr-2">© 2021 ShopAsia</span>
               <span className="pr-2">
                 <a href="#" className="text-dark">
                   Privacy

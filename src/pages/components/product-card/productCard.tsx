@@ -9,7 +9,7 @@ interface productDetailsProps {
 const ProductCard = ({ item }: productDetailsProps) => {
   return (
     <div className="col-6 col-md-3 mb-3">
-      <div className="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm">
+      <div className="list-card bg-white h-100 round overflow-hidden position-relative shadow-sm">
         <div className="list-card-image">
           <div className="wish_list_icn">
             <button>
