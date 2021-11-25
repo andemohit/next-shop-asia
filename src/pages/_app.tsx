@@ -1,7 +1,10 @@
 import '../../public/assets/styles/globals.scss'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import type { AppProps } from 'next/app'
-import ProductList from './components/product-list'
+
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

@@ -1,9 +1,8 @@
 import React from "react";
 import image from "next/image";
-import Icofont from "react-icofont";
-import { NextPage } from "next";
+import { CgFacebook, CgTwitter, CgInstagram, CgYoutube } from 'react-icons/cg';
 
-const LargeScreen: NextPage = () => {
+const LargeScreen = () => {
   return (
     <footer className="section-footer border-top bg-white">
       <section className="footer-top py-4">
@@ -28,16 +27,16 @@ const LargeScreen: NextPage = () => {
             </div>
             <div className="col-md-4 text-md-right">
               <a href="#" className="btn btn-icon btn-light">
-                {/* <Icofont icon="facebook" /> */}
+                <CgFacebook />
               </a>
               <a href="#" className="btn btn-icon btn-light">
-                {/* <Icofont icon="twitter" /> */}
+                <CgTwitter />
               </a>
               <a href="#" className="btn btn-icon btn-light">
-                {/* <Icofont icon="instagram" /> */}
+                <CgInstagram />
               </a>
               <a href="#" className="btn btn-icon btn-light">
-                {/* <Icofont icon="youtube" /> */}
+                <CgYoutube />
               </a>
             </div>
           </div>

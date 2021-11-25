@@ -57,7 +57,7 @@ const ProductList: NextPage = () => {
             <div className="col-lg-12">
               <div className="shopasia-listing">
                 <div className="d-flex align-items-center mb-3 justify-content-between">
-                  <h4>Pick's Today</h4>
+                  <h4>Pick&sbquo;s Today</h4>
                   <div className="m-0 text-center ml-auto">
                     <a
                       href="#"
@@ -80,7 +80,7 @@ const ProductList: NextPage = () => {
 
                 <div className="row">
                   {dummyData?.map((item: any, index: any) => (
-                    <ProductCard item={item} />
+                    <ProductCard item={item} key={index} />
                   ))}
                 </div>
               </div>

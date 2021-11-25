@@ -1,6 +1,6 @@
 import React from "react";
 import image from "next/image";
-import Icofont from "react-icofont";
+import { CgFacebook, CgTwitter, CgInstagram, CgYoutube } from 'react-icons/cg';
 import { NextPage } from "next";
 
 const smallScreen: NextPage = () => {
@@ -28,16 +28,16 @@ const smallScreen: NextPage = () => {
             </div>
             <div className="col-md-4 text-md-right">
               <a href="#" className="btn btn-icon btn-light">
-                {/* <Icofont icon="facebook" /> */}
+                <CgFacebook />
               </a>
               <a href="#" className="btn btn-icon btn-light">
-                {/* <Icofont icon="twitter" /> */}
+                <CgTwitter />
               </a>
               <a href="#" className="btn btn-icon btn-light">
-                {/* <Icofont icon="instagram" /> */}
+                <CgInstagram />
               </a>
               <a href="#" className="btn btn-icon btn-light">
-                {/* <Icofont icon="youtube" /> */}
+                <CgYoutube />
               </a>
             </div>
           </div>
