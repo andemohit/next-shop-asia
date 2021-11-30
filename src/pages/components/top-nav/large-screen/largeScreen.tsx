@@ -1,7 +1,18 @@
 import { NextPage } from "next";
 import Icofont from "react-icofont";
 import Link from "next/link";
+
+import { FiSearch, FiLogIn } from 'react-icons/fi';
+import { IoLocationSharp } from 'react-icons/io5';
+import { IoIosNotifications, IoMdCart } from 'react-icons/io';
+
 const LargeScreen: NextPage = () => {
+  // const renderIcon = () => {
+  //   return (
+  //     typeof window !== "undefined"? <Icofont icon="icofont-location-pin" /> : <i></i>
+  //   )
+  // }
+
   return (
     <div className="bg-white shadow-sm shopasia-main-nav">
       <nav
@@ -45,37 +56,12 @@ const LargeScreen: NextPage = () => {
               aria-haspopup="true"
               aria-expanded="false"
             >
-              <div>
-                {/* <Icofont
-                    className="d-flex
-                    align-items-center
-                    bg-light
-                    rounded-pill
-                    p-2
-                    icofont-size
-                    border
-                    shadow-sm
-                    mr-2"
-                    icon="icofont-location-pin"
-                    size="1"
-                /> */}
-
-                {/* <Link href="cart.html">
-                    <a
-                        className="d-flex
-                        align-items-center
-                        bg-light
-                        rounded-pill
-                        p-2
-                        icofont-size
-                        border
-                        shadow-sm
-                        mr-2"
-                    >
-                        <i className="icofont-location-pin"></i>
+              <div className="d-flex align-items-center bg-light rounded-pill border shadow-sm p-2 mr-2">
+                <Link href="cart.html">
+                    <a>
+                        <IoLocationSharp size="1.3em" />
                     </a>
-                </Link> */}
-                {/* <i className="text-dark icofont-location-pin"></i> */}
+                </Link>
               </div>
               <div>
                 <p className="text-muted mb-0 small">Select Location</p>
@@ -145,52 +131,38 @@ const LargeScreen: NextPage = () => {
             <div className="input-group-prepend">
               <div className="btn btn-success rounded-right">
                 <i className="icofont-search"></i>
+                {/* <FontAwesomeIcon icon={faSearch} /> */}
+                <FiSearch />
               </div>
             </div>
           </div>
         </div>
         <div className="ms-auto d-flex align-items-center">
-          <a
-            href="#"
-            data-toggle="modal"
-            data-target="#login"
-            className="
-                        mr-2
-                        text-dark
-                        bg-light
-                        rounded-pill
-                        p-2
-                        icofont-size
-                        border
-                        shadow-sm
-                    "
-          >
-            <i className="icofont-login"></i>
-          </a>
-
-          <div className="dropdown">
+          <Link href="/">
             <a
-              href="#"
-              className="text-dark dropdown-toggle not-drop"
-              id="dropdownMenuNotification"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
+              data-toggle="modal"
+              data-target="#login"
+              className="d-flex align-items-center bg-light rounded-pill border shadow-sm p-2 me-2"
             >
-              <i
-                className="
-                                icofont-notification
-                                d-flex
-                                align-items-center
-                                bg-light
-                                rounded-pill
-                                p-2
-                                icofont-size
-                                border
-                                shadow-sm
-                            "
-              ></i>
+              <FiLogIn size="1.1rem" />
             </a>
+          </Link>
+          <div className="dropdown">
+            <Link href="/">
+              <a
+                className="text-dark dropdown-toggle not-drop"
+                id="dropdownMenuNotification"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <span
+                  className="d-flex align-items-center bg-light rounded-pill border shadow-sm p-2 me-2"
+                >
+                  <IoIosNotifications size="1.1rem" />
+                </span>
+              </a>
+            </Link>
             <div
               className="
                             dropdown-menu dropdown-menu-right
@@ -283,18 +255,9 @@ const LargeScreen: NextPage = () => {
 
           <a
             href="cart.html"
-            className="
-                        ml-2
-                        text-dark
-                        bg-light
-                        rounded-pill
-                        p-2
-                        icofont-size
-                        border
-                        shadow-sm
-                    "
+            className="d-flex align-items-center bg-light rounded-pill border shadow-sm p-2 me-2"
           >
-            <i className="icofont-shopping-cart"></i>
+            <IoMdCart size="1.1rem" />
           </a>
         </div>
       </nav>
